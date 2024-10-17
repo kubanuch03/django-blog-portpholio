@@ -8,7 +8,6 @@ from django.db.models import Q
 import random
 import re
 
-# Create your views here.
 def index (request):
     blogs = Blog.objects.all()
     random_blogs = random.sample(list(blogs), 3)
