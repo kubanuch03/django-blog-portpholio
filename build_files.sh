@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-sudo apt-get update
-sudo apt-get install -y libsqlite3-dev
+apt-get update
+apt-get install -y libsqlite3-dev || true 
 
 # Проверка и установка pip, если он отсутствует
 if ! command -v pip &> /dev/null
