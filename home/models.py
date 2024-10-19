@@ -5,7 +5,7 @@ class Blog(models.Model):
     sno = models.AutoField(primary_key=True)
     title = models.CharField(max_length=200)
     meta = models.CharField(max_length=300)
-    content = models.TextField()
+    content = models.TextField(blank=True,null=True)
     thumbnail_img = models.ImageField(null=True, blank=True, upload_to="images/")
     thumbnail_url = models.URLField(blank=True, null=True)
     category = models.CharField(max_length=255, default="uncategorized")
