@@ -1,8 +1,17 @@
+#!/bin/bash
 set -e
+
+# Проверка и установка pip, если он отсутствует
+if ! command -v pip &> /dev/null
+then
+    echo "pip не найден. Устанавливаю pip..."
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    python3 get-pip.py
+fi
 
 pip install -r requirements.txt
 
-python3 manage.py collectstatic
+python3 manage.py collectstatic --noinput
 python3 manage.py makemigrations
 python3 manage.py migrate
 
