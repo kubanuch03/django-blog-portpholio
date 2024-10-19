@@ -1,3 +1,5 @@
 venv
 .env
 .vercel
+static
+staticfiles
