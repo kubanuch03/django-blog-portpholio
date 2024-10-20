@@ -13,7 +13,7 @@ services:
       - static_volume:/static
       - media_volume:/media
     ports:
-      - "8001:8001"
+      - "8002:8002"
    
      
 volumes:
