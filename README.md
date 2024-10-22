@@ -1,3 +1,7 @@
+/etc/letsencrypt/live/blog.bono-bar.com/fullchain.pem
+/etc/letsencrypt/live/blog.bono-bar.com/privkey.pem
+
+
 # Django Tailwind Blog - A Developer Portfolio & Blog
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
