@@ -149,6 +149,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "static"),
 # ]
+CSRF_USE_SESSIONS = True
+CSRF_TRUSTED_ORIGINS = ["https://blog.bono-bar.com"]
 
 
 
